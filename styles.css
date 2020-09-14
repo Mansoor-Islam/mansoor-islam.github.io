@@ -367,7 +367,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (min-width: 481px) and (max-width: 700px) {
+@media (min-width: 411px) and (max-width: 700px) {
   .logo {
     margin: 0.1rem auto 0.5rem;
   }
@@ -431,8 +431,8 @@ body::-webkit-scrollbar-thumb {
   }
 
   pre {
-    font-size: 0.8em;
-    padding: 50px 235px 50px;
+    font-size: 0.7em;
+    padding: 50px 200px 50px;
   }
 
   .purple-star-container {
@@ -453,5 +453,18 @@ body::-webkit-scrollbar-thumb {
 
   .contact-details .info {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 320px) {
+
+  .nav-links {
+    font-size: 0.6em;
+    margin-right: 0;
+    margin-left: 100px;
+  }
+  pre {
+    font-size: 0.5em;
+    padding: 50px 150px 50px;
   }
 }
