@@ -456,15 +456,3 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (min-width: 320px) {
-
-  .nav-links {
-    font-size: 0.6em;
-    margin-right: 0;
-    margin-left: 100px;
-  }
-  pre {
-    font-size: 0.5em;
-    padding: 50px 150px 50px;
-  }
-}
