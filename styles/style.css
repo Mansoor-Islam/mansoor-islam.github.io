@@ -1,0 +1,543 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  max-width: 1900px;
+  background-color: #f5f1ff;
+}
+
+.nav-ul,
+.portfolio-container h2 {
+  text-transform: uppercase;
+}
+
+.hero-section h3,
+.card a,
+.contact-details .contact-medium-name,
+.footer p {
+  font-family: "Lato", sans-serif;
+}
+
+/* == Navbar == */
+
+.header,
+.hero-section {
+  background-color: #7e0cf5;
+  color: #fff;
+}
+
+.header {
+  position: relative;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav .logo {
+  margin: 2rem;
+}
+
+.nav .logo a {
+  font-size: 3rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10%;
+  border-top: 2px solid white;
+  border-right: 4px double white;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-ul {
+  font-size: 1.5rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5rem;
+}
+
+/* == Hero Section == */
+
+.hero-section {
+  height: 63rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2rem;
+  border-bottom-left-radius: 1.8rem;
+  border-bottom-right-radius: 1.8rem;
+}
+
+.hero-section .avatar-container {
+  margin-top: 1rem;
+}
+
+.hero-section .avatar {
+  width: 24rem;
+  height: 26rem;
+}
+
+.hero-section h1 {
+  font-size: 6.4rem;
+}
+
+.hero-section h1,
+.hero-section h3 {
+  text-align: center;
+}
+
+.hero-section .star-icon {
+  font-size: 4rem;
+}
+
+.social-links {
+  width: 11rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-section .social-links i {
+  color: #fff;
+  font-size: 2.2rem;
+  border: 0.2rem solid #fff;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.hero-section .social-links i:hover {
+  cursor: pointer;
+  color: #212529;
+  background-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.hero-section h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  padding-bottom: 3rem;
+}
+
+.bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+/* === Portfolio Section === */
+
+.portfolio-container,
+.contact-section {
+  text-align: center;
+  color: #7e0cf5;
+  padding: 4rem 2rem;
+}
+
+.portfolio-container h2,
+.contact-section h2 {
+  font-size: 4rem;
+}
+
+.portfolio-container .star-icon,
+.contact-section .star-icon {
+  font-size: 3rem;
+}
+
+.portfolio-cards {
+  margin: 1rem 0;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.portfolio-cards .card {
+  height: 42rem;
+  width: 36rem;
+  background-color: #dcc1fc;
+  margin: 2rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 0.4rem;
+  border: 0.15rem solid #7e0cf5;
+}
+
+.card img {
+  width: 100%;
+  height: 25rem;
+}
+
+.card h3 {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  color: #543884;
+}
+
+.card p {
+  color: #543884;
+  font-size: 1.5rem;
+}
+
+.card .cta {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.card a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  background-color: #7e0cf5;
+  background-image: linear-gradient(
+    135.9deg,
+    rgba(109, 25, 252, 1) 16.4%,
+    rgba(125, 31, 165, 1) 56.1%
+  );
+  color: #fff;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* === About Section === */
+
+.about-section {
+  text-align: center;
+  background-color: #7e0cf5;
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+.about-section h2 {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.about-section .star-icon {
+  font-size: 3rem;
+}
+
+.code-section {
+  background-color: #212529;
+  box-shadow: 0px 0px 2px 1px black;
+  font-size: 1.8rem;
+  text-align: left;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 43%;
+  margin: 4rem auto;
+}
+
+pre {
+  overflow: auto;
+}
+
+pre span {
+  display: inline-block;
+  padding: 0.3rem 0;
+}
+
+.var-keyword {
+  color: #eff956;
+}
+
+.var-name {
+  color: #fa6860;
+}
+
+.property-name {
+  color: #5df5f5;
+}
+
+.property-value {
+  color: #df8bf9;
+}
+
+/* === Contact Section === */
+
+.contact-section {
+  margin: 2rem;
+}
+.contact-section h2 {
+  text-transform: uppercase;
+}
+
+.contact-details {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-details .contact-option {
+  height: 15rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-details i {
+  font-size: 3rem;
+  color: #fff;
+  background-color: #7e0cf5;
+  padding: 2.5rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.contact-details .contact-medium-name {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+
+.contact-details .contact-number a,
+.contact-details .contact-email a {
+  color: #7e0cf5;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* === Footer === */
+
+.footer p {
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #6508c6;
+  text-align: center;
+  padding: 30px;
+  text-transform: capitalize;
+}
+
+/* === Scrollbar Styling */
+
+body::-webkit-scrollbar,
+pre::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track,
+pre::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb,
+pre::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #dcc1fc;
+  outline: none;
+}
+
+/* ========== Media Queries ================ */
+
+@media screen and (max-width: 1200px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .nav {
+    width: 100%;
+    margin-top: 3rem;
+    padding: 0 2rem;
+  }
+
+  .nav .logo a {
+    margin: 3rem;
+    font-size: 3rem;
+  }
+
+  .hero-section {
+    height: 55rem;
+  }
+
+  .hero-section h1 {
+    font-size: 4rem;
+    padding: 1rem;
+  }
+
+  .hero-section .star-icon {
+    font-size: 3rem;
+  }
+
+  .hero-section .social-links {
+    width: 13%;
+  }
+
+  .hero-section .social-links i {
+    font-size: 2rem;
+  }
+
+  .hero-section h3 {
+    font-size: 1.8rem;
+  }
+
+  .code-section {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .header {
+    height: 10rem;
+  }
+
+  .nav {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 0 2rem;
+  }
+
+  .nav .logo a {
+    margin: 3rem;
+    font-size: 3rem;
+  }
+
+  .nav-ul li {
+    border-right: 2px solid #fff;
+  }
+
+  .nav-ul li:last-child {
+    border-right: none;
+  }
+
+  .hero-section {
+    height: 55rem;
+  }
+
+  .hero-section .avatar {
+    width: 15rem;
+    height: 17rem;
+  }
+
+  .hero-section h1 {
+    font-size: 4rem;
+  }
+
+  .hero-section .star-icon {
+    font-size: 2.5rem;
+  }
+
+  .hero-section .social-links {
+    width: 27%;
+  }
+
+  .hero-section .social-links i {
+    font-size: 2rem;
+  }
+
+  .hero-section h3 {
+    font-size: 1.7rem;
+    padding: 0 2rem;
+  }
+
+  .card .cta a {
+    width: 100%;
+    margin: 0.5rem;
+  }
+
+  .code-section {
+    width: 100%;
+    font-size: 1.7rem;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    margin-bottom: -3rem;
+  }
+
+  .contact-details .contact-option {
+    width: 100%;
+  }
+
+  .contact-details .contact-number a,
+  .contact-details .contact-email a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    height: 8rem;
+  }
+  .hero-section {
+    height: 48rem;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+
+  .hero-section .social-links {
+    width: 30%;
+  }
+
+  .hero-section .social-links i {
+    font-size: 2rem;
+  }
+
+  .hero-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .code-section {
+    font-size: 1.7rem;
+  }
+
+  .footer p {
+    font-size: 1.4rem;
+  }
+}
