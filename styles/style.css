@@ -189,9 +189,10 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
   border-radius: 0.4rem;
-  border: 0.15rem solid #7e0cf5;
+  border: 0.1px solid #7e0cf5;
 }
 
 .card img {
@@ -232,6 +233,11 @@ html {
   padding: 1rem 3rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.project-img {
+  background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 /* === About Section === */
